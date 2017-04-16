@@ -1,10 +1,20 @@
 <% include header %>
-        <section id="index">
-            <h1>File Metadata Microservice</h1>
-            <h1>Usage Example:</h1>
-            <p></p><br>
-            <p></p>
-            <h1></h1>
-            <p></p>
-        </section>
+<section id="index">
+    <h1>File Metadata Microservice</h1>
+    <h1>Usage Example:</h1>
+    <p></p><br>
+    <p></p>
+    <main id="form">
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="fileUpload" id="file">
+            <input type="submit">
+        </form>
+    </main>
+    <script>
+        var fileSize = <%= fileSize %>;
+        if(fileSize){
+            alert("File Size: " + fileSize);
+        }
+    </script>
+</section>
 <% include footer %>
