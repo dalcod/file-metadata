@@ -6,30 +6,16 @@
     font-size: 2.1em;
     margin-bottom: 70px;
 }
-#index p{
-    display: inline-block;
-    border: 1px solid red;
-    color: red;
-    padding: 5px;
+#index #file{
+    margin-left: -20px;
+    margin-right: 80px;
 }
-#index p span{
-    color: black;
+.show{
+    visibility: visible;
 }
-#index p:last-of-type{
-    border: 1px solid black;
-    color: black;
+.hidden{
+    visibility: hidden;
 }
-
-/* --------------------------- */
-
-#result h3{
-    margin-left: 50px;
-}
-#natural, #unix{
-    position: relative;
-    left: 50px;
-}
-
 /* --------------------------- */
 
 #error{

@@ -18,7 +18,11 @@ app.get("/", function(req, res){
 });
 
 app.post("/", upload.any(), function(req, res, next){
-    console.log("passed")
+    if(!req.files[0]){
+        app.locals.fileSize = 0;
+        res.redirect("/");
+        return;
+    }
     app.locals.fileSize = req.files[0].size;
     res.redirect("/");
 });

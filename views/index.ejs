@@ -1,14 +1,12 @@
 <% include header %>
 <section id="index">
     <h1>File Metadata Microservice</h1>
-    <h1>Usage Example:</h1>
-    <p></p><br>
-    <p></p>
     <main id="form">
         <form method="post" enctype="multipart/form-data">
             <input type="file" name="fileUpload" id="file">
-            <input type="submit">
+            <input type="submit" value="Upload" id="upload">
         </form>
+        <p class="hidden">Please Select a File.</p>
     </main>
     <script>
         var fileSize = <%= fileSize %>;
